@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhúng JS</title>
+</head>
+<body>
+
+<button onclick="show()">Click 1</button>
+<br> <br>
+
+<button onclick="kq1()">Click 2</button>
+<br> <br>
+
+<div id="kq1"></div>
+<button type="button" onclick="showMessage()">Click 3</button>
+<br> <br>
+
+<button onclick="kq()">Click Me</button>
+<script>
+    function show() {
+        console.log(' Hello! ')
+    }
+    function kq(){
+        document.write(" bye! ")
+    }
+
+    function kq1(){
+        alert('Ahihi')
+    }
+    function showMessage(){
+        document.getElementById('kq1').innerHTML = 'Hi'
+    }
+</script>
+</body>
+
+</html>
